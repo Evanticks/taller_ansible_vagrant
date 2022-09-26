@@ -1,2 +1,5 @@
 - name: Actualizamos el sistema
-  apt: 
+  apt: update_cache=yes upgrade=yes
+- name: Instalamos tree
+  apt:
+    pkg: tree
